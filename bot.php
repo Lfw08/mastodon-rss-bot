@@ -8,13 +8,13 @@ PLEASE FOLLOW THE STEPS IN README.MD
 
 // Mastodon and RSS feed configuration:
 
-$token="YOUR_TOKEN_HERE"; 
+$token="g91lUOcSXaEfESNE7UiQv7N5qQenXccFcmbVif0U8i8"; 
 // Token of your Mastodon bot account
 
-$base_url="https://mastodon.social"; 
+$base_url="https://masto.ai"; 
 // URL of your instance (Do not include '/' at the end.)
 
-$feed_url="https://example.com/feed.xml"; 
+$feed_url="https://aezfm.meldingcloud.com/rss/programother/159"; 
 // URL of RSS or Atom feed
 
 $visibility="public"; 
