@@ -39,9 +39,10 @@ if (!ini_get('date.timezone')) {
 require_once 'rss-php/src/Feed.php';
 
 $rss = Feed::loadRss($feed_url);
-$post = htmlSpecialChars($rss->item->title) . " " . htmlSpecialChars($rss->item->link);
+$post = htmlSpecialChars($rss->item->title) .  htmlSpecialChars($rss->item->link);
 
 echo $post;
+
 
 // Read the last post content from the local file storage.txt
 
@@ -94,7 +95,7 @@ if ($lastpost == $post) {
     ];
 
     $status_data = array(
-      "status" => $post,
+      "status" => $post . PHP_EOL.PHP_EOL.'RSS :rss: Feed -Headline News- from CGTN Radio',
       "language" => $language,
       "visibility" => $visibility
     );
