@@ -39,7 +39,7 @@ if (!ini_get('date.timezone')) {
 require_once 'rss-php/src/Feed.php';
 
 $rss = Feed::loadRss($feed_url);
-$post = htmlSpecialChars($rss->item->title) .  htmlSpecialChars($rss->item->link);
+$post = htmlSpecialChars($rss->item->title).PHP_EOL. '---------'.PHP_EOL. htmlSpecialChars($rss->item->description);
 
 echo $post;
 
